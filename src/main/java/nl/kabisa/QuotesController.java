@@ -14,7 +14,7 @@ public class QuotesController {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "/quote")
+    @RequestMapping(method = RequestMethod.GET, path = "/")
     public String getRandomQuote() {
         return jdbcTemplate.queryForObject("select text from quotes ORDER BY random() LIMIT 1;", String.class);
     }
