@@ -14,5 +14,5 @@ To be deployed on [Dokku](https://github.com/dokku/dokku)
 $ createdb dokku-demo
 $ mvn clean package
 $ java -jar target/dokku-boot-demo-0.0.1-SNAPSHOT.jar
-$ curl http://localhost:8080/quote
+$ curl http://localhost:8080/
 ```
